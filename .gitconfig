@@ -1,0 +1,19 @@
+[user]
+	name = Leandre Charlebois
+	email = lcharlebois@*******.com
+	
+[diff]
+ external = C:/Program Files/git/cmd/git-diff-wrapper.sh
+	
+[merge]
+    tool = kdiff3
+
+[mergetool "diffmerge"]
+	cmd = git-merge-wrapper.sh "$PWD/$BASE" "$PWD/$LOCAL" "$PWD/$REMOTE" "$PWD/$MERGED" 
+    trustExitCode = false
+	keepBackup = false
+ 
+[mergetool "kdiff3"]
+	cmd = git-merge-wrapper.sh "$PWD/$BASE" "$PWD/$LOCAL" "$PWD/$REMOTE" "$PWD/$MERGED" 
+    trustExitCode = false
+	keepBackup = false
