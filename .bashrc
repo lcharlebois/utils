@@ -15,6 +15,7 @@ publish() { BRANCH=$(git rev-parse --abbrev-ref HEAD); git push --set-upstream o
 rmpackages() { rm -rf packages/* ; }
 logd() { git log --graph --decorate --oneline ;}
 delremote() { git push origin --delete $1;}
+merge() { git mergetool $1;}
 
 #others
 alias npp="/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
